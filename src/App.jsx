@@ -153,8 +153,8 @@ const FR_DATA = {
 // ---------- Portuguese dataset ----------
 const PT_DATA = {
   // falar: { irregular: false, present: { "eu": "falo", "tu": "falas", "ele/ela/você": "fala", "nós": "falamos", "eles/elas/vocês": "falam" } },
-  // ser: { irregular: true, present: { "eu": "sou", "tu": "és", "ele/ela/você": "é", "nós": "somos", "eles/elas/vocês": "são" } },
-  // estar: { irregular: false, present: { "eu": "estou", "tu": "estás", "ele/ela/você": "está", "nós": "estamos", "eles/elas/vocês": "estão" } },
+  ser: { irregular: true, present: { "eu": "sou", "tu": "és", "ele/ela/você": "é", "nós": "somos", "eles/elas/vocês": "são" } },
+  estar: { irregular: false, present: { "eu": "estou", "tu": "estás", "ele/ela/você": "está", "nós": "estamos", "eles/elas/vocês": "estão" } },
   ler: { irregular: true, present: { "eu": "leio", "tu": "lês", "ele/ela/você": "lê", "nós": "lemos", "eles/elas/vocês": "leem" } },
   ver: { irregular: true, present: { "eu": "vejo", "tu": "vês", "ele/ela/você": "vê", "nós": "vemos", "eles/elas/vocês": "veem" } },
   ter: { irregular: true, present: { "eu": "tenho", "tu": "tens", "ele/ela/você": "tem", "nós": "temos", "eles/elas/vocês": "têm" } },
