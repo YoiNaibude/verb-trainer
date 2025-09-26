@@ -174,12 +174,12 @@ const PT_DATA = {
   dormir: { irregular: false, present: { "eu": "durmo", "tu": "dormes", "ele/ela/você": "dorme", "nós": "dormimos", "eles/elas/vocês": "dormem" } },
   ouvir: { irregular: false, present: { "eu": "ouço", "tu": "ouves", "ele/ela/você": "ouve", "nós": "ouvimos", "eles/elas/vocês": "ouvem" } },
   preferir: { irregular: false, present: { "eu": "prefiro", "tu": "preferes", "ele/ela/você": "prefere", "nós": "preferimos", "eles/elas/vocês": "preferem" } },
-  // sair: { irregular: true, present: { "eu": "saio", "tu": "sais", "ele/ela/você": "sai", "nós": "saímos",  "eles/elas/vocês": "saem" } },
-  // rir: { irregular: true, present: { "eu": "rio", "tu": "ris", "ele/ela/você": "ri", "nós": "rimos", "eles/elas/vocês": "riem" } },
+  sair: { irregular: true, present: { "eu": "saio", "tu": "sais", "ele/ela/você": "sai", "nós": "saímos",  "eles/elas/vocês": "saem" } },
+  rir: { irregular: true, present: { "eu": "rio", "tu": "ris", "ele/ela/você": "ri", "nós": "rimos", "eles/elas/vocês": "riem" } },
   // cair: { irregular: true, present: { "eu": "caio", "tu": "cais", "ele/ela/você": "cai", "nós": "caímos", "eles/elas/vocês": "caem" } },
   // perder: { irregular: true, present: { "eu": "perco", "tu": "perdes", "ele/ela/você": "perde", "nós": "perdemos", "eles/elas/vocês": "perdem" } },
   // servir: { irregular: false, present: { "eu": "sirvo", "tu": "serves", "ele/ela/você": "serve", "nós": "servimos",  "eles/elas/vocês": "servem" } },
-  // pedir: { irregular: false, present: { "eu": "peço", "tu": "pedes", "ele/ela/você": "pede", "nós": "pedimos", "eles/elas/vocês": "pedem" } },
+  pedir: { irregular: false, present: { "eu": "peço", "tu": "pedes", "ele/ela/você": "pede", "nós": "pedimos", "eles/elas/vocês": "pedem" } },
   // passear: { irregular: true, present: { "eu": "passeio", "tu": "passeias", "ele/ela/você": "passeia", "nós": "passeamos", "eles/elas/vocês": "passeiam" } },
 };
 
