@@ -152,35 +152,151 @@ const FR_DATA = {
 
 // ---------- Portuguese dataset ----------
 const PT_DATA = {
-  falar: { irregular: false, present: { "eu": "falo", "tu": "falas", "ele/ela/você": "fala", "nós": "falamos", "eles/elas/vocês": "falam" } },
-  ser: { irregular: true, present: { "eu": "sou", "tu": "és", "ele/ela/você": "é", "nós": "somos", "eles/elas/vocês": "são" } },
-  estar: { irregular: false, present: { "eu": "estou", "tu": "estás", "ele/ela/você": "está", "nós": "estamos", "eles/elas/vocês": "estão" } },
-  ler: { irregular: true, present: { "eu": "leio", "tu": "lês", "ele/ela/você": "lê", "nós": "lemos", "eles/elas/vocês": "leem" } },
-  ver: { irregular: true, present: { "eu": "vejo", "tu": "vês", "ele/ela/você": "vê", "nós": "vemos", "eles/elas/vocês": "veem" } },
-  ter: { irregular: true, present: { "eu": "tenho", "tu": "tens", "ele/ela/você": "tem", "nós": "temos", "eles/elas/vocês": "têm" } },
-  fazer: { irregular: true, present: { "eu": "faço", "tu": "fazes", "ele/ela/você": "faz", "nós": "fazemos", "eles/elas/vocês": "fazem" } },
-  ir: { irregular: true, present: { "eu": "vou", "tu": "vais", "ele/ela/você": "vai", "nós": "vamos", "eles/elas/vocês": "vão" } },
-  poder: { irregular: true, present: { "eu": "posso", "tu": "podes", "ele/ela/você": "pode", "nós": "podemos", "eles/elas/vocês": "podem" } },
-  querer: { irregular: true, present: { "eu": "quero", "tu": "queres", "ele/ela/você": "quer", "nós": "queremos", "eles/elas/vocês": "querem" } },
-  saber: { irregular: true, present: { "eu": "sei", "tu": "sabes", "ele/ela/você": "sabe", "nós": "sabemos", "eles/elas/vocês": "sabem" } },
-  "chamar-se": { irregular: false, present: { "eu": "me chamo", "tu": "te chamas", "ele/ela/você": "se chama", "nós": "nos chamamos", "eles/elas/vocês": "se chamam" } },
-  dizer: { irregular: true, present: { "eu": "digo", "tu": "dizes", "ele/ela/você": "diz", "nós": "dizemos",  "eles/elas/vocês": "dizem" } },
-  dar: { irregular: true, present: { "eu": "dou", "tu": "dás", "ele/ela/você": "dá", "nós": "damos", "eles/elas/vocês": "dão" } },
-  subir: { irregular: false, present: { "eu": "subo", "tu": "sobes", "ele/ela/você": "sobe", "nós": "subimos", "eles/elas/vocês": "sobem" } },
-  pôr: { irregular: true, present: { "eu": "ponho", "tu": "pões", "ele/ela/você": "põe", "nós": "pomos", "eles/elas/vocês": "põem" } },
-  trazer: { irregular: true, present: { "eu": "trago", "tu": "trazes", "ele/ela/você": "traz", "nós": "trazemos", "eles/elas/vocês": "trazem" } },
-  vir: { irregular: true, present: { "eu": "venho", "tu": "vens", "ele/ela/você": "vem", "nós": "vimos", "eles/elas/vocês": "vêm" } },
-  haver: { irregular: true, present: { "eu": "hei", "tu": "hás", "ele/ela/você": "há", "nós": "havemos", "eles/elas/vocês": "hão" } },
-  dormir: { irregular: false, present: { "eu": "durmo", "tu": "dormes", "ele/ela/você": "dorme", "nós": "dormimos", "eles/elas/vocês": "dormem" } },
-  ouvir: { irregular: false, present: { "eu": "ouço", "tu": "ouves", "ele/ela/você": "ouve", "nós": "ouvimos", "eles/elas/vocês": "ouvem" } },
-  preferir: { irregular: false, present: { "eu": "prefiro", "tu": "preferes", "ele/ela/você": "prefere", "nós": "preferimos", "eles/elas/vocês": "preferem" } },
-  sair: { irregular: true, present: { "eu": "saio", "tu": "sais", "ele/ela/você": "sai", "nós": "saímos",  "eles/elas/vocês": "saem" } },
-  rir: { irregular: true, present: { "eu": "rio", "tu": "ris", "ele/ela/você": "ri", "nós": "rimos", "eles/elas/vocês": "riem" } },
-  cair: { irregular: true, present: { "eu": "caio", "tu": "cais", "ele/ela/você": "cai", "nós": "caímos", "eles/elas/vocês": "caem" } },
-  perder: { irregular: true, present: { "eu": "perco", "tu": "perdes", "ele/ela/você": "perde", "nós": "perdemos", "eles/elas/vocês": "perdem" } },
-  servir: { irregular: false, present: { "eu": "sirvo", "tu": "serves", "ele/ela/você": "serve", "nós": "servimos",  "eles/elas/vocês": "servem" } },
-  pedir: { irregular: false, present: { "eu": "peço", "tu": "pedes", "ele/ela/você": "pede", "nós": "pedimos", "eles/elas/vocês": "pedem" } },
-  passear: { irregular: true, present: { "eu": "passeio", "tu": "passeias", "ele/ela/você": "passeia", "nós": "passeamos", "eles/elas/vocês": "passeiam" } },
+  falar: {
+    irregular: false,
+    present: { "eu": "falo", "tu": "falas", "ele/ela/você": "fala", "nós": "falamos", "eles/elas/vocês": "falam" },
+    "pretérito perfeito": { "eu": "falei", "tu": "falaste", "ele/ela/você": "falou", "nós": "falamos", "eles/elas/vocês": "falaram" },
+  },
+  ser: {
+    irregular: true,
+    present: { "eu": "sou", "tu": "és", "ele/ela/você": "é", "nós": "somos", "eles/elas/vocês": "são" },
+    "pretérito perfeito": { "eu": "fui", "tu": "foste", "ele/ela/você": "foi", "nós": "fomos", "eles/elas/vocês": "foram" },
+  },
+  estar: {
+    irregular: false,
+    present: { "eu": "estou", "tu": "estás", "ele/ela/você": "está", "nós": "estamos", "eles/elas/vocês": "estão" },
+    "pretérito perfeito": { "eu": "estive", "tu": "estiveste", "ele/ela/você": "esteve", "nós": "estivemos", "eles/elas/vocês": "estiveram" },
+  },
+  ler: {
+    irregular: true,
+    present: { "eu": "leio", "tu": "lês", "ele/ela/você": "lê", "nós": "lemos", "eles/elas/vocês": "leem" },
+    "pretérito perfeito": { "eu": "li", "tu": "leste", "ele/ela/você": "leu", "nós": "lemos", "eles/elas/vocês": "leram" },
+  },
+  ver: {
+    irregular: true,
+    present: { "eu": "vejo", "tu": "vês", "ele/ela/você": "vê", "nós": "vemos", "eles/elas/vocês": "veem" },
+    "pretérito perfeito": { "eu": "vi", "tu": "viste", "ele/ela/você": "viu", "nós": "vimos", "eles/elas/vocês": "viram" },
+  },
+  ter: {
+    irregular: true,
+    present: { "eu": "tenho", "tu": "tens", "ele/ela/você": "tem", "nós": "temos", "eles/elas/vocês": "têm" },
+    "pretérito perfeito": { "eu": "tive", "tu": "tiveste", "ele/ela/você": "teve", "nós": "tivemos", "eles/elas/vocês": "tiveram" },
+  },
+  fazer: {
+    irregular: true,
+    present: { "eu": "faço", "tu": "fazes", "ele/ela/você": "faz", "nós": "fazemos", "eles/elas/vocês": "fazem" },
+    "pretérito perfeito": { "eu": "fiz", "tu": "fizeste", "ele/ela/você": "fez", "nós": "fizemos", "eles/elas/vocês": "fizeram" },
+  },
+  ir: {
+    irregular: true,
+    present: { "eu": "vou", "tu": "vais", "ele/ela/você": "vai", "nós": "vamos", "eles/elas/vocês": "vão" },
+    "pretérito perfeito": { "eu": "fui", "tu": "foste", "ele/ela/você": "foi", "nós": "fomos", "eles/elas/vocês": "foram" },
+  },
+  poder: {
+    irregular: true,
+    present: { "eu": "posso", "tu": "podes", "ele/ela/você": "pode", "nós": "podemos", "eles/elas/vocês": "podem" },
+    "pretérito perfeito": { "eu": "pude", "tu": "pudeste", "ele/ela/você": "pôde", "nós": "pudemos", "eles/elas/vocês": "puderam" },
+  },
+  querer: {
+    irregular: true,
+    present: { "eu": "quero", "tu": "queres", "ele/ela/você": "quer", "nós": "queremos", "eles/elas/vocês": "querem" },
+    "pretérito perfeito": { "eu": "quis", "tu": "quiseste", "ele/ela/você": "quis", "nós": "quisemos", "eles/elas/vocês": "quiseram" },
+  },
+  saber: {
+    irregular: true,
+    present: { "eu": "sei", "tu": "sabes", "ele/ela/você": "sabe", "nós": "sabemos", "eles/elas/vocês": "sabem" },
+    "pretérito perfeito": { "eu": "soube", "tu": "soubeste", "ele/ela/você": "soube", "nós": "soubemos", "eles/elas/vocês": "souberam" },
+  },
+  "chamar-se": {
+    irregular: false,
+    present: { "eu": "me chamo", "tu": "te chamas", "ele/ela/você": "se chama", "nós": "nos chamamos", "eles/elas/vocês": "se chamam" },
+    "pretérito perfeito": { "eu": "me chamei", "tu": "te chamaste", "ele/ela/você": "se chamou", "nós": "nos chamamos", "eles/elas/vocês": "se chamaram" },
+  },
+  dizer: {
+    irregular: true,
+    present: { "eu": "digo", "tu": "dizes", "ele/ela/você": "diz", "nós": "dizemos",  "eles/elas/vocês": "dizem" },
+    "pretérito perfeito": { "eu": "disse", "tu": "disseste", "ele/ela/você": "disse", "nós": "dissemos", "eles/elas/vocês": "disseram" },
+  },
+  dar: {
+    irregular: true,
+    present: { "eu": "dou", "tu": "dás", "ele/ela/você": "dá", "nós": "damos", "eles/elas/vocês": "dão" },
+    "pretérito perfeito": { "eu": "dei", "tu": "deste", "ele/ela/você": "deu", "nós": "demos", "eles/elas/vocês": "deram" },
+  },
+  subir: {
+    irregular: false,
+    present: { "eu": "subo", "tu": "sobes", "ele/ela/você": "sobe", "nós": "subimos", "eles/elas/vocês": "sobem" },
+    "pretérito perfeito": { "eu": "subi", "tu": "subiste", "ele/ela/você": "subiu", "nós": "subimos", "eles/elas/vocês": "subiram" },
+  },
+  pôr: {
+    irregular: true,
+    present: { "eu": "ponho", "tu": "pões", "ele/ela/você": "põe", "nós": "pomos", "eles/elas/vocês": "põem" },
+    "pretérito perfeito": { "eu": "pus", "tu": "puseste", "ele/ela/você": "pôs", "nós": "pusemos", "eles/elas/vocês": "puseram" },
+  },
+  trazer: {
+    irregular: true,
+    present: { "eu": "trago", "tu": "trazes", "ele/ela/você": "traz", "nós": "trazemos", "eles/elas/vocês": "trazem" },
+    "pretérito perfeito": { "eu": "trouxe", "tu": "trouxeste", "ele/ela/você": "trouxe", "nós": "trouxemos", "eles/elas/vocês": "trouxeram" },
+  },
+  vir: {
+    irregular: true,
+    present: { "eu": "venho", "tu": "vens", "ele/ela/você": "vem", "nós": "vimos", "eles/elas/vocês": "vêm" },
+    "pretérito perfeito": { "eu": "vim", "tu": "vieste", "ele/ela/você": "veio", "nós": "viemos", "eles/elas/vocês": "vieram" },
+  },
+  haver: {
+    irregular: true,
+    present: { "eu": "hei", "tu": "hás", "ele/ela/você": "há", "nós": "havemos", "eles/elas/vocês": "hão" },
+    "pretérito perfeito": { "ele/ela/você": "houve" }, // impersonal use
+  },
+  dormir: {
+    irregular: false,
+    present: { "eu": "durmo", "tu": "dormes", "ele/ela/você": "dorme", "nós": "dormimos", "eles/elas/vocês": "dormem" },
+    "pretérito perfeito": { "eu": "dormi", "tu": "dormiste", "ele/ela/você": "dormiu", "nós": "dormimos", "eles/elas/vocês": "dormiram" },
+  },
+  ouvir: {
+    irregular: false,
+    present: { "eu": "ouço", "tu": "ouves", "ele/ela/você": "ouve", "nós": "ouvimos", "eles/elas/vocês": "ouvem" },
+    "pretérito perfeito": { "eu": "ouvi", "tu": "ouviste", "ele/ela/você": "ouviu", "nós": "ouvimos", "eles/elas/vocês": "ouviram" },
+  },
+  preferir: {
+    irregular: false,
+    present: { "eu": "prefiro", "tu": "preferes", "ele/ela/você": "prefere", "nós": "preferimos", "eles/elas/vocês": "preferem" },
+    "pretérito perfeito": { "eu": "preferi", "tu": "preferiste", "ele/ela/você": "preferiu", "nós": "preferimos", "eles/elas/vocês": "preferiram" },
+  },
+  sair: {
+    irregular: true,
+    present: { "eu": "saio", "tu": "sais", "ele/ela/você": "sai", "nós": "saímos",  "eles/elas/vocês": "saem" },
+    "pretérito perfeito": { "eu": "saí", "tu": "saíste", "ele/ela/você": "saiu", "nós": "saímos", "eles/elas/vocês": "saíram" },
+  },
+  rir: {
+    irregular: true,
+    present: { "eu": "rio", "tu": "ris", "ele/ela/você": "ri", "nós": "rimos", "eles/elas/vocês": "riem" },
+    "pretérito perfeito": { "eu": "ri", "tu": "riste", "ele/ela/você": "riu", "nós": "rimos", "eles/elas/vocês": "riram" },
+  },
+  cair: {
+    irregular: true,
+    present: { "eu": "caio", "tu": "cais", "ele/ela/você": "cai", "nós": "caímos", "eles/elas/vocês": "caem" },
+    "pretérito perfeito": { "eu": "caí", "tu": "caíste", "ele/ela/você": "caiu", "nós": "caímos", "eles/elas/vocês": "caíram" },
+  },
+  perder: {
+    irregular: true,
+    present: { "eu": "perco", "tu": "perdes", "ele/ela/você": "perde", "nós": "perdemos", "eles/elas/vocês": "perdem" },
+    "pretérito perfeito": { "eu": "perdi", "tu": "perdeste", "ele/ela/você": "perdeu", "nós": "perdemos", "eles/elas/vocês": "perderam" },
+  },
+  servir: {
+    irregular: false,
+    present: { "eu": "sirvo", "tu": "serves", "ele/ela/você": "serve", "nós": "servimos",  "eles/elas/vocês": "servem" },
+    "pretérito perfeito": { "eu": "servi", "tu": "serviste", "ele/ela/você": "serviu", "nós": "servimos", "eles/elas/vocês": "serviram" },
+  },
+  pedir: {
+    irregular: false,
+    present: { "eu": "peço", "tu": "pedes", "ele/ela/você": "pede", "nós": "pedimos", "eles/elas/vocês": "pedem" },
+    "pretérito perfeito": { "eu": "pedi", "tu": "pediste", "ele/ela/você": "pediu", "nós": "pedimos", "eles/elas/vocês": "pediram" },
+  },
+  passear: {
+    irregular: true,
+    present: { "eu": "passeio", "tu": "passeias", "ele/ela/você": "passeia", "nós": "passeamos", "eles/elas/vocês": "passeiam" },
+    "pretérito perfeito": { "eu": "passeei", "tu": "passeaste", "ele/ela/você": "passeou", "nós": "passeamos", "eles/elas/vocês": "passearam" },
+  },
 };
 
 // ---------- People per tense ----------
@@ -194,6 +310,7 @@ const PERSONS = {
   },
   pt: {
     present: ["eu", "tu", "ele/ela/você", "nós", "eles/elas/vocês"],
+    "pretérito perfeito": ["eu", "tu", "ele/ela/você", "nós", "eles/elas/vocês"],
   },
 };
 
@@ -255,7 +372,10 @@ export default function App() {
   const verbs = useMemo(() => { if (lang === "fr") return FR_DATA; if (lang === "pt") return PT_DATA; return {}; }, [lang]);
 
   function startSession() {
-    const selectedTenses = lang === "fr" ? tensesFR : ["present"]; // PT MVP present only
+    //const selectedTenses = lang === "fr" ? tensesFR : ["present"]; // PT MVP present only
+    const selectedTenses = lang === "fr" ? tensesFR : ["present", "pretérito perfeito"];
+
+
 
     // Build potential cards
     const all = [];
